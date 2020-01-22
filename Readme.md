@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Аня Жирова](https://up.htmlacademy.ru/htmlcss/27/user/866707).
-* Наставник: `Екатерина Киреева`.
+* Наставник: [Екатерина Киреева](https://htmlacademy.ru/profile/ekateric) .
 
 ---
 

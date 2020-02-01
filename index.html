@@ -68,18 +68,23 @@
           </ul>
         </div>
       </section>
-
       <section class="best-offers">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       </section>
       <section class="hotel-search-form">
         <h3>Поиск гостиницы в Седоне</h3>  <!-- Это будет форма поиска гостиницы -->
-          <span>Дата заезда:</span>
-          <span>Дата выезда:</span>
-          <span>Взрослые:</span>
-          <span>Дети:</span>
+        <form action="index.html" method="get">
+          <label for ="arrival-date">Дата заезда:</label>
+          <input id="arrival-date" type="date" name="date" value="2017-04-24">  <!-- Возможно ли изменить формат даты как в макете стандартными средствами html - я не нашл -->
+          <label for ="departure-date">Дата выезда:</label>
+          <input id="arrival-date" type="date" name="date" value="2017-07-04">
+          <label for ="adult">Взрослые:</label>
+          <input id="adult" type="number" name="adult" value="2">
+          <label for ="child">Дети:</label>
+          <input id="child" type="number" name="child" value="0">
           <button type="button">Найти</button>
+          </form>
       </section>
     <img src="img/content/map.png" alt="Карта, где обозначено местоположение Седоны "width="1200" height="593">
     </main>

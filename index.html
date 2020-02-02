@@ -85,23 +85,29 @@
           </li>
         </ul>
       </section>
-      <section class="best-offers">
+      <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </section>
-      <section class="hotel-search-form">
-        <h3>Поиск гостиницы в Седоне</h3>  <!-- Это будет форма поиска гостиницы -->
-        <form action="index.html" method="get">
-          <label for ="arrival-date">Дата заезда:</label>
-          <input id="arrival-date" type="date" name="date" value="2017-04-24">  <!-- Возможно ли изменить формат даты как в макете стандартными средствами html - я не нашл -->
-          <label for ="departure-date">Дата выезда:</label>
-          <input id="arrival-date" type="date" name="date" value="2017-07-04">
-          <label for ="adult">Взрослые:</label>
-          <input id="adult" type="number" name="adult" value="2">
-          <label for ="child">Дети:</label>
-          <input id="child" type="number" name="child" value="0">
-          <button type="button">Найти</button>
-          </form>
+        <h3>Поиск гостиницы в Седоне</h3>
+        <form action="index.html" method="post">
+          <label for="arrival-date">Дата заезда:</label>
+          <input id="arrival-date" type="date" name="arrival-date" value="2017-04-24">
+          <label for="departure-date">Дата выезда:</label>
+          <input id="departure-date" type="date" name="departure-date" value="2017-07-04">
+          <label for="adult">Взрослые:</label>
+          <div class="people-counter">
+            <button type="button">-</button>
+            <input id="adult" type="number" name="adult" value="2">  <!--Как убрать стрелочки которые остались в поле number я вроде нашла (с помощью css) -->
+            <button type="button">+</button>
+          </div>
+          <label for="child">Дети:</label>
+          <div class="people-counter">
+            <button type="button">-</button>
+            <input id="child" type="number" name="child" value="0">
+            <button type="button">+</button>
+          </div>
+          <button type="submit">Найти</button>
+        </form>
       </section>
     <img src="img/content/map.png" alt="Карта, где обозначено местоположение Седоны "width="1200" height="593">
     </main>

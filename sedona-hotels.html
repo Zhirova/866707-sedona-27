@@ -19,7 +19,41 @@
     <main>
       <section>
         <h1 class="visually-hidden">Фильтр гостиниц</h1>
-        <!-- здесь будет форма - фильтр гостиниц -->
+        <form action="sedona-hotels.html" method="post">
+          <div>
+          <h2>Инфраструктура:</h2>
+            <input id="pool" type="checkbox" name="pool" checked>
+            <label for="pool">Бассейн</label>
+            <input id="parking" type="checkbox" name="parking">
+            <label for="parking">Парковка</label>
+            <input id="wi-fi" type="checkbox" name="wi-fi">
+            <label for="wi-fi">Wi-Fi</label>
+          </div>
+          <div>
+          <h2>Тип жилья:</h2>
+            <input id="hotel" type="checkbox" name="hotel" checked>
+            <label for="hotel">Гостиница</label>
+            <input id="motel" type="checkbox" name="motel" checked>
+            <label for="motel">Мотель</label>
+            <input id="apartments" type="checkbox" name="apartments" checked>
+            <label for="apartments">Апартаменты</label>
+          </div>
+          <div>
+            <h2>Стоимость в сутки (р):</h2>
+            от 0 <input type="range" id="price" name="price" min="0" max="3000" step="1"> до 3000
+            <button type="button">Показать</button>
+          </div>
+          <section>
+            <h2>Найдено: 3</h2>
+            <h3>Сортировка:</h3>
+            <button type="button">По цене</button>
+            <button type="button">По типу</button>
+            <button type="button">По рейтингу</button>
+            <figure>
+              <!-- изображения треугольников-сортировки--->
+            </figure>
+          </section>
+        </form>
       </section>
       <section class="all-found-hotels">
         <h2 class="visually-hidden">Найденные гостиницы</h2>

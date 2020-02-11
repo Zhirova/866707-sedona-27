@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  
+  <body class="inner-page">
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a href="#"><img src="img/logo/logo.png" width="140" height="71" alt="City of Sedona"></a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -16,10 +20,12 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="welcome-sedona">
         <img src="img/banners/welcome.svg" alt="Добро пожаловать в Седону!" width="459" height="353">
       </section>
+
       <section class="about-sedona">
         <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -79,10 +85,11 @@
           </li>
         </ul>
       </section>
+
       <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button class="button" type="button">Поиск гостиницы в Седоне</button>
         <form action="index.html" method="post">
           <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
           <label for="arrival-date">Дата заезда:</label>
@@ -101,21 +108,28 @@
             <input id="child" type="number" name="child" value="0">
             <button type="button">+</button>
           </div>
-          <button type="submit">Найти</button>
+          <button type="submit" class="find-button">Найти</button>
         </form>
       </section>
       <img src="img/content/map.png" alt="город Седона расположен в северной части долины Верде штата Аризона, по обе стороны границы между округами Коконино и Явапаи" width="1200" height="593">
     </main>
-    <footer>
+
+    <footer class="main-footer">
       <p class="footer-contacts">
         #visitSEDONA <br>
-        <a href="tel:+74956660266">Тел:+7(495) 666-02-66</a> 
+        <a href="tel:+74956660266">Тел:+7(495) 666-02-66</a>
       </p>
-      <div class="footer-social">
+      <div class="footer-social"> <!-- не контентные изображения-->
         <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>  <!-- не контентные изображения-->
-          <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">YouTube</span></a></li>
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">YouTube</span></a>
+          </li>
         </ul>
       </div>
       <p class="footer-copyright">Website by

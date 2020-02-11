@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}﻿
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.nav-selected{
+  color:#766357;
+}
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome-sedona {
+background-image: url("../img/bg/background-photo.jpg");
+background-repeat: no-repeat;
+background-color: #3f86b0;
+}
+.about-sedona{
+  font: inherit;
+  text-align: center;
+}
+.about-sedona h1{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.about-sedona p{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.hotel-search h2{
+  font: inherit;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.hotel-search p{
+  font: inherit;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.hotel-search input{
+  background-color: #f2f2f2;
+  border: none;
+}
+.hotel-search input:hover{
+  background-color: #ebebeb;
+}
+.hotel-search input:focus{
+  background-color: #ffffff;
+}
+
+.button{
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #766357;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #604e43;
+}
+.button:active {
+  background-color: #503e33;
+  color:rgba(255, 255, 255, 0.3);
+}
+.find-button{
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background-color: #81b3d2;
+  border: none;
+}
+.find-button:hover,
+.find-button:focus{
+  background-color: #669ec0;
+}
+.find-button:active{
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+.main-footer{
+  background-color: #ffffff;
+}
+.footer-contacts{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.footer-contacts a {
+  text-decoration: none;
+  color: #000000;
+}
+.footer-social{
+  text-align: center;
+}
+.footer-social ul{
+  list-style: none;
+}
+.footer-copyright{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+/* Для страницы sedona-hotels*/
+.found-hotel a{
+  text-decoration: none;
+  color: #000000;
+}
+.found-hotel a:hover,
+.found-hotel a:focus{
+  text-decoration: none;
+  color: #81b3d2;
+}
+.found-hotel a:active{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.found-hotel ul{
+  list-style: none;
+}
+.description-hotel h3{
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.description-hotel p,
+.rating{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.actions button{
+  border:none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color:#ffffff;
+  background-color: #766357;
+}
+
+.actions button:hover,
+.actions button:focus{
+background-color: #604e43;
+}
+.actions button:active{
+background-color: #503e33;
+color: rgba(255, 255, 255, 0.3);
+}
+.actions a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  background-color: #81b3d2;
+  color:#ffffff;
+}
+.actions a:hover,
+.actions a:focus{
+  background-color: #669ec0;
+}
+.actions a:active{
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}

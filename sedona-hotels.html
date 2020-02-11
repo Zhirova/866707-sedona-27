@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: отели Седоны</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
     <header>
       <nav>
@@ -17,6 +21,7 @@
       </nav>
     </header>
     <main>
+    <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <section>
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <form action="sedona-hotels.html" method="get">
@@ -63,9 +68,9 @@
           <li><a href="#">По типу</a></li>
           <li><a href="#">По рейтингу</a></li>
         </ul>
-        <div>
-          <a href="index.html"><img src="img/icons/icon-up-dir.svg" width ="11" height="10" alt="отображение сортировки от наименьшего к наибольшему"></a>
-          <a href="index.html"><img src="img/icons/icon-down-dir.svg" width ="11" height="10" alt="отображение сортировки от наибольшего к наименьшему"></a>
+        <div class="sorting">
+          <a href="index.html"><span class="visually-hidden">сортировка от наименьшего к наибольшему</span></a>
+          <a href="index.html"><span class="visually-hidden">сортировка от наибольшего к наименьшему</span></a>
         </div>
       </section>
       <section class="all-found-hotels">
@@ -75,6 +80,8 @@
             <h3><a href="#">Amara Resort & Spa</a></h3>
             <p class="type-hotel">Гостиница</p>
             <p class="price">от 4000 р.</p>
+          </div>
+          <div class="actions">
             <a href="#">Подробнее</a>
             <button type="button">Забронировать</button>
           </div>
@@ -91,6 +98,8 @@
             <h3><a href="#">Desert Quail Inn</a></h3>
             <p class="type-hotel">Мотель</p>
             <p class="price">от 3000 р.</p>
+          </div>
+          <div class="actions">
             <a href="#">Подробнее</a>
             <button type="button">Забронировать</button>
           </div>
@@ -107,6 +116,8 @@
             <h3><a href="#">Villas at Poco Diablo</a></h3>
             <p class="type-hotel">Апартаменты</p>
             <p class="price">от 2000 р.</p>
+          </div>
+          <div class="actions">
             <a href="#">Подробнее</a>
             <button type="button">Забронировать</button>
           </div>
@@ -125,11 +136,17 @@
         #visitSEDONA<br>
         <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
       </p>
-      <div class="footer-social">
+      <div class="footer-social"><!-- не контентные изображения-->
         <ul>
-          <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>  <!-- не контентные изображения-->
-          <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a class="social-button" href="#"><span class="visually-hidden">YouTube</span></a></li>
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><span class="visually-hidden">YouTube</span></a>
+          </li>
         </ul>
       </div>
       <p class="footer-copyright">Website by

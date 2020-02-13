@@ -15,14 +15,22 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .main-navigation {
   color: #000000;
   font-weight: 700;
   background-color: #ffffff;
 }
 
-.nav-selected{
-  color:#766357;
+.nav-selected {
+  color: #766357;
   font-weight: 700;
 }
 
@@ -32,9 +40,9 @@ a {
   padding: 0;
 }
 
-.site-navigation a{
+.site-navigation a {
   font-weight: 700;
-  color:inherit;
+  color: inherit;
 }
 
 .site-navigation a:hover,
@@ -49,66 +57,72 @@ a {
 .welcome-sedona {
   background-image: url("../img/bg/background-photo.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  height: 773px;
+  background-position: center -56px;
+  height: 508px;
   background-color: #3f86b0;
-  background-size: cover;  /*применила чтобы картинка была по всей ширине*/
+  background-size: cover;
 }
 
-.about-sedona{
+.about-sedona {
   text-align: center;
 }
 
-.about-sedona h1{
+.about-sedona h1 {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.hotel-search h2{
+.hotel-search h2 {
   text-align: center;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
-.hotel-search p{
+.hotel-search p {
   text-align: center;
   line-height: 24px;
   font-weight: 400;
 }
 
-.hotel-search label{
+.hotel-search label {
   font-weight: 700;
 }
 
-.hotel-search input{
+.hotel-search input {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  outline: none;   /* убрала голубую "браузерную" обводку пока элемент в фокусе*/
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid #f2f2f2;
 }
 
-.hotel-search input:hover{
+.hotel-search input:hover {
   background-color: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
-.hotel-search input:focus{
+.hotel-search input:focus {
   background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
-.brown-button{
+.brown-button {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+  outline: none;
   color: #ffffff;
   text-align: center;
   background-color: #766357;
   border: none;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .brown-button:hover,
@@ -118,44 +132,47 @@ a {
 
 .brown-button:active {
   background-color: #503e33;
-  color: rgba(255, 255, 255, 0.3); /* Вернула свойство color: rgba вместо opacity, т.к. становилась прозрачной вся кнопка, а не только текст в ней*/
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.brown-button-big{
+.brown-button-big {
 font-size: 21px;
 }
 
-.blue-button{
+.blue-button {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+  outline: none;
   color: #ffffff;
   text-align: center;
   background-color: #81b3d2;
   border: none;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.blue-button-big{
+.blue-button-big {
 font-size: 21px;
 }
 
 .blue-button:hover,
-.blue-button:focus{
+.blue-button:focus {
   background-color: #669ec0;
 }
 
-.blue-button:active{
+.blue-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer{
+.main-footer {
   background-color: #ffffff;
 }
 
-.footer-contacts{
+.footer-contacts {
   font-size: 21px;
   font-weight: 700;
 }
@@ -164,45 +181,45 @@ font-size: 21px;
   color: #000000;
 }
 
-.footer-social{
+.footer-social {
   text-align: center;
 }
 
-.footer-social ul{
+.footer-social ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 /* Для страницы sedona-hotels*/
-.description-hotel a{
+.description-hotel a {
   text-decoration: none;
   color: #000000;
 }
 
 .description-hotel a:hover,
-.description-hotel a:focus{
+.description-hotel a:focus {
   text-decoration: none;
   color: #81b3d2;
 }
 
-.description-hotel a:active{
+.description-hotel a:active {
   text-decoration: none;
   opacity: 0.3;
 }
 
-.found-hotel ul{
+.found-hotel ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.description-hotel h3{
+.description-hotel h3 {
   font-size: 21px;
   font-weight: 700;
 }
 
 .description-hotel p,
-.rating{
+.rating {
   line-height: 21px;
 }

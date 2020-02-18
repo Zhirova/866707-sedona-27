@@ -11,7 +11,9 @@
   <body class="inner-page">
     <header>
       <nav class="main-navigation">
-        <a href="#"><img src="img/logo/logo.png" width="140" height="71" alt="City of Sedona"></a>
+        <div class="main-header-logo">
+          <a href="#"><img src="img/logo/logo.png" width="140" height="71" alt="City of Sedona"></a>
+        </div>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -21,7 +23,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <section class="welcome-sedona">
         <img src="img/banners/welcome.svg" alt="Добро пожаловать в Седону!" width="459" height="353">
       </section>
@@ -88,9 +90,9 @@
 
       <section class="hotel-search">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="brown-button brown-button-big" type="button">Поиск гостиницы в Седоне</button>
-        <form action="index.html" method="post">
+        <form class="search-form" action="index.html" method="post">
           <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
           <label for="arrival-date">Дата заезда:</label>
           <input id="arrival-date" type="date" name="arrival-date" value="2017-04-24">
@@ -115,34 +117,36 @@
     </main>
 
     <footer class="main-footer">
-      <p class="footer-contacts">
-        #visitSEDONA <br>
-        <a href="tel:+74956660266">Тел:+7(495) 666-02-66</a>
-      </p>
-      <div class="footer-social"> <!-- не контентные изображения-->
-        <ul>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <p class="footer-contacts">
+          #visitSEDONA <br>
+          <a href="tel:+74956660266">Тел:+7(495) 666-02-66</a>
+        </p>
+        <div class="footer-social"> <!-- не контентные изображения-->
+          <ul>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Twitter</span> Скрытые соц.иконки
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo/logo-htmla.svg" width ="115" height="41" alt="HTML-Academia">
+          </a>
+        </p>
       </div>
-      <p class="footer-copyright">Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo/logo-htmla.svg" width ="115" height="41" alt="HTML-Academia">
-        </a>
-      </p>
     </footer>
   </body>
 </html>

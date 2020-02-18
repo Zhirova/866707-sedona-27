@@ -8,10 +8,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="inner-page">
     <header>
-      <nav>
-        <a href="index.html"><img src="img/logo/logo.png" width="140" height="71" alt="City of Sedona"></a>
+      <nav class="main-navigation">
+        <div class="main-header-logo">
+          <a href="index.html"><img src="img/logo/logo.png" width="140" height="71" alt="City of Sedona"></a>
+        </div>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -20,7 +22,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
     <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <section>
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -76,6 +78,9 @@
       <section class="all-found-hotels">
         <h2 class="visually-hidden">Найденные гостиницы</h2>
         <article class="found-hotel">
+          <figure>
+            <a href="#"><img src="img/content/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa"></a>
+          </figure>
           <div class="description-hotel">
             <h3><a href="#">Amara Resort & Spa</a></h3>
             <p class="type-hotel">Гостиница</p>
@@ -83,31 +88,35 @@
           </div>
           <a class="blue-button" href="#">Подробнее</a>
           <button class="brown-button" type="button">Забронировать</button>
-          <figure>
-            <a href="#"><img src="img/content/hotel-amara.jpg" width="135" height="90" alt="Amara Resort & Spa"></a>
-          </figure>
-          <p class="rating">Рейтинг: 8,5</p>
-          <ul aria-label="4 звезды">
-            <li>Звезды</li>
-          </ul>
+            <div class="rating">
+              <ul aria-label="4 звезды">
+                <li>Звезды</li>
+              </ul>
+              <p class="rating-nmb">Рейтинг: 8,5</p>
+            </div>
         </article>
         <article class="found-hotel">
-          <div class="description-hotel">
-            <h3><a href="#">Desert Quail Inn</a></h3>
-            <p class="type-hotel">Мотель</p>
-            <p class="price">от 3000 р.</p>
-          </div>
-          <a class="blue-button" href="#">Подробнее</a>
-          <button class="brown-button" type="button">Забронировать</button>
           <figure>
             <a href="#"><img src="img/content/hotel-desert.jpg" width="135" height="90" alt="Desert Quail Inn"></a>
           </figure>
-          <p class="rating">Рейтинг: 8,9</p>
-          <ul>
-            <li aria-label="3 звезды">Звезды</li>
-          </ul>
+            <div class="description-hotel">
+              <h3><a href="#">Desert Quail Inn</a></h3>
+              <p class="type-hotel">Мотель</p>
+              <p class="price">от 3000 р.</p>
+            </div>
+          <a class="blue-button" href="#">Подробнее</a>
+          <button class="brown-button" type="button">Забронировать</button>
+          <div class="rating">
+            <ul>
+              <li aria-label="3 звезды">Звезды</li>
+            </ul>
+            <p class="rating-nmb">Рейтинг: 8,9</p>
+        </div>
         </article>
         <article class="found-hotel">
+          <figure>
+            <a href="#"><img src="img/content/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo"></a>
+          </figure>
           <div class="description-hotel">
             <h3><a href="#">Villas at Poco Diablo</a></h3>
             <p class="type-hotel">Апартаменты</p>
@@ -115,45 +124,46 @@
           </div>
           <a class="blue-button" href="#">Подробнее</a>
           <button class="brown-button" type="button">Забронировать</button>
-          <figure>
-            <a href="#"><img src="img/content/hotel-villas.jpg" width="135" height="90" alt="Villas at Poco Diablo"></a>
-          </figure>
-          <p class="rating">Рейтинг: 9,2</p>
-            <ul aria-label="2 звезды">
-              <li>Звезды</li>
-            </ul>
+            <div class="rating">
+              <ul aria-label="2 звезды">
+                <li>Звезды</li>
+              </ul>
+              <p class="rating-nmb">Рейтинг: 9,2</p>
+            </div>
         </article>
       </section>
     </main>
-    <footer>
-      <p class="footer-contacts">
-        #visitSEDONA<br>
-        <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
-      </p>
-      <div class="footer-social"><!-- не контентные изображения-->
-        <ul>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-        </ul>
+    <footer class="main-footer">
+      <div class="container">
+        <p class="footer-contacts">
+          #visitSEDONA <br>
+          <a href="tel:+74956660266">Тел:+7(495) 666-02-66</a>
+        </p>
+        <div class="footer-social"> <!-- не контентные изображения-->
+          <ul>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Twitter</span> Скрытые соц.иконки
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer-copyright">Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo/logo-htmla.svg" width ="115" height="41" alt="HTML-Academia">
+          </a>
+        </p>
       </div>
-      <p class="footer-copyright">Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo/logo-htmla.svg" width ="115" height="41" alt="HTML-Academia логотип">
-        </a>
-      </p>
     </footer>
   </body>
 </html>

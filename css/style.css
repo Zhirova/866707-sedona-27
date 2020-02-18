@@ -223,3 +223,185 @@ a {
 .rating {
   line-height: 21px;
 }
+
+/* строим сетку*/
+/* ----- Сеточные стили ----- */
+html,
+body {
+  min-width: 1122px;
+  min-height: 1150px;
+}
+
+.inner-page {
+  /*background-image: url('../img/sedona-index.jpg'); */
+  background-size: 1200px auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.welcome-sedona {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-sedona img {
+  margin-top: 76px;
+  width: 459px;
+  height: 353px;
+}
+
+.inner-page .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 71px;
+  order: 1;
+  margin-right: 53px;
+  margin-left: 51px;
+  /* Временно для сетки */
+  background-color: rgba(255, 0, 255, 0.3);
+}
+
+.site-navigation {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 70px;
+  background-color: rgba(155, 155, 0, 0.3);
+}
+
+.about-sedona {
+  min-height: 216px;
+  background-color: #ffffff;
+}
+
+.about-sedona h1 {
+  margin-top:0;
+  width: 440px;
+  padding-top: 61px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-sedona p {
+  width: 489px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 291px;
+  background-color: #ffffff;
+}
+
+.hotel-search h2 {
+  width: 300px;
+  padding-top: 57px;
+}
+
+.hotel-search p {
+  width: 435px;
+  height: 37px;
+  padding-bottom: 52px;
+}
+
+.search-form {
+  width: 568px;
+}
+
+.main-footer {
+  margin-right: 40px;
+  margin-left: 40px;
+  padding-top: 35px;
+  opacity: 0.9;
+  /* Временно для сетки */
+  min-height: 100px;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contacts {
+  width: 223px;
+  margin: 0;
+  margin-right: 169px;
+  /* Временно для сетки */
+  background-color: rgba(155, 55, 0, 0.3);
+  min-height: 100px;
+}
+
+.footer-social {
+  width: 152px;
+  align-self: center;
+  /* Временно для сетки */
+  background-color: rgba(155, 10, 150, 0.3);
+  min-height: 100px;
+}
+
+.footer-copyright {
+  margin: 0;
+  width: 200px;
+  margin-left: 228px;
+  /* Временно для сетки */
+  background-color: rgba(15, 1, 1, 0.3);
+  min-height: 100px;
+}
+
+.all-found-hotels {
+  background-color: #ffffff;
+}
+
+.found-hotel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1200px;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: rgba(155, 1, 1, 0.3);
+}
+
+.found-hotel figure {
+  margin: 0;
+  margin-top: 30px;
+  padding-left: 72px;
+}
+
+.found-hotel h3 {
+  margin: 0;
+  margin-top: 30px;
+}
+
+.found-hotel .description-hotel {
+  margin-left: 30px;
+  background-color: rgba(155, 251, 1, 0.3);
+}
+
+.rating-nmb {
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.blue-button,
+.brown-button {
+  height: 27px;
+}

@@ -26,16 +26,13 @@ a {
 .container {
   margin: 0 auto;
   width: 1200px;
-  box-shadow: 0px 7px 15px 0 rgba(0,1,1,0.15);
+  box-shadow: 0px 5px 15px 0 rgba(0,1,1,0.2);
 }
 
 .main-navigation {
-  display: flex;
-  flex-direction: column;
   color: #000000;
   font-weight: 700;
   background-color: #ffffff;
-  align-items: stretch;
 }
 
 .nav-selected {
@@ -43,18 +40,13 @@ a {
   font-weight: 700;
 }
 
-.main-header-logo {
-  display: block;
-  align-self: center;
-  margin-top: -56px;
-  width: 140px;
-  height: 71px;
-}
-
 .site-navigation {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+  min-height: 56px;
+  align-items: center;
   /* Временно для сетки */
   background-color: rgba(155, 155, 0, 0.3);
 }
@@ -62,6 +54,29 @@ a {
 .site-navigation a {
   font-weight: 700;
   color: inherit;
+  display: block;
+}
+
+.site-navigation li {
+  flex-basis: 239px;
+}
+
+.site-navigation li:nth-child(1) {
+  padding-left: 72px;
+  text-align: left;
+}
+
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3) {
+  text-align: right;
+}
+
+.site-navigation li:nth-child(4) {
+  padding-right: 72px;
+  text-align: right;
 }
 
 .site-navigation a:hover,
@@ -71,6 +86,15 @@ a {
 
 .site-navigation a:active {
   opacity: 0.3;
+}
+
+.main-header-logo {
+  display: block;
+  align-self: center;
+  margin-top: -56px;
+  margin: 0 auto;
+  width: 140px;
+  height: 71px;
 }
 
 .welcome-sedona {

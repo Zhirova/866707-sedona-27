@@ -31,7 +31,7 @@ a {
 
 .main-navigation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   color: #000000;
   font-weight: 700;
   background-color: #ffffff;
@@ -45,10 +45,10 @@ a {
 
 .main-header-logo {
   display: block;
+  align-self: center;
+  margin-top: -56px;
   width: 140px;
   height: 71px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .site-navigation {
@@ -130,10 +130,10 @@ a {
 .search-form {
   position: absolute;
   background-color: #ffffff;
+  text-align: left;
   width: 568px;
   height: 395px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-  margin: auto;
 }
 
 .hotel-search label {
@@ -173,6 +173,7 @@ a {
   border: none;
   display: inline-block;
   vertical-align: top;
+  height: 27px;
 }
 
 .brown-button:hover,
@@ -202,6 +203,8 @@ a {
   border: none;
   display: inline-block;
   vertical-align: top;
+  height: 27px;
+  width: 110px;
 }
 
 .blue-button-big {
@@ -218,13 +221,10 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.main-footer .container {
+.main-footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-}
-
-.main-footer {
   background-color: rgba(254, 254, 254, 0.9);
 }
 
@@ -302,9 +302,9 @@ a {
 .found-hotel {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 1200px;
   border-bottom: 1px solid #f2f2f2;
+  justify-content: space-between;
+
 }
 
 .found-hotel figure {
@@ -318,10 +318,24 @@ a {
   margin-top: 30px;
 }
 
-.found-hotel .description-hotel {
+.description-hotel {
   margin-left: 30px;
+  margin-right: auto;
   min-width: 252px;
+
   background-color: rgba(155, 251, 1, 0.3);
+}
+
+.columns-container {
+  display: flex;
+}
+
+.column-1 a {         /*наверное это "костыль", чтобы цвет текста кнопки был белый */
+  color: #ffffff;
+}
+
+.column-2 {         /*наверное это "костыль", чтобы цвет текста кнопки был белый */
+  margin-left: auto;
 }
 
 .rating-nmb {
@@ -339,11 +353,6 @@ a {
 }
 
 .rating {
-  margin-left: 522px;
   margin-top: 30px;
-}
-
-.blue-button,
-.brown-button {
-  height: 27px;
+  margin-right: 73px;
 }

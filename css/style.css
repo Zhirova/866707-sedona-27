@@ -299,8 +299,9 @@ a {
 }
 
 .index-footer {
-  position: relative;
-  bottom: 134px;
+  position: absolute;
+  top: 3000px;
+  width: 968px;
 }
 
 /* Для страницы sedona-hotels*/

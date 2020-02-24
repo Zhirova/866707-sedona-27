@@ -470,10 +470,7 @@ a {
   padding: 0;
   min-height: 36px;
   align-self: center;
-}
-
-.column-2 {
-  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .description-hotel h3 {

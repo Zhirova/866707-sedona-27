@@ -100,11 +100,22 @@ a {
 .welcome-sedona {
   background-image: url("../img/bg/background-photo.jpg");
   background-repeat: no-repeat;
-  background-position: center -56px;
+  background-position: center -82px;
   height: 508px;
   background-color: #3f86b0;
   background-size: cover;
   text-align: center;
+}
+
+.mask {
+  /* Я хотела добавить маску через позиционирование блока с задним фоном (ему relative, здесь absolute, но когда задала relative,
+  лого в навигации "ушел на задний план", его нижний конец стала перекрывать эта большая фото. Наверное чтобы этого избежать надо тогда и лого абсолютно позиционировать ) */
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 507px;
+  width: 1203px;
+  height: 59px;
+  background-image: url("../img/bg/intro-mask.svg");
 }
 
 .welcome-sedona img {
@@ -131,9 +142,11 @@ a {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 27px;
 }
 
 .hotel-search {
+  position: relative;
   text-align: center;
   padding-top: 52px;
   padding-bottom: 57px;
@@ -141,23 +154,61 @@ a {
 }
 
 .hotel-search h2 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 }
 
 .hotel-search p {
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .search-form {
+  margin: 0;
+  padding: 0;
   position: absolute;
+  top: 291px;
+  left: 318px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: stretch;
+  justify-content: center;
   background-color: #ffffff;
   text-align: left;
+  padding-top: 30px;
   width: 568px;
-  height: 395px;
+  height: 360px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.search-form-item input{
+  margin-left: 21px;
+  width: 345px;
+  min-height: 38px;
+}
+
+.people-counter {
+  background-color: green;
+  width: 260px;
+  min-height: 38px;
+  /* align-self: flex-end; */
+}
+
+.people-counter input{
+  width: 40px;
+  height: 38px;
+  /* align-self: flex-end; */
+}
+
+.people-counter label{
+  margin-left: 30px;
 }
 
 .hotel-search label {
@@ -198,7 +249,6 @@ a {
   display: inline-block;
   vertical-align: top;
   height: 27px;
-  margin-left: 6px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -215,6 +265,14 @@ a {
 
 .brown-button-big {
   font-size: 21px;
+  margin-top: 45px;
+  height: 86px;
+  padding-left: 141px;
+  padding-right: 142px;
+}
+
+.column-2 .brown-button {
+  margin-top: 14px;
 }
 
 .blue-button {
@@ -234,12 +292,18 @@ a {
 
 .blue-button-detail {
   height: 27px;
+  margin-top: 14px;
   padding-left: 17px;
   padding-right: 17px;
 }
 
 .blue-button-big {
   font-size: 21px;
+  margin-top: 55px;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  padding-left: 196px;
+  padding-right: 196px;
 }
 
 .blue-button:hover,
@@ -256,9 +320,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 36px;
+  padding-top: 30px;
   padding-bottom: 32px;
   padding-left: 132px;
+  /*Здесь для РР нужно чуть левее сдвинуть контакты, и видимо из-за абсолютного позиционирования padding
+  работает "наоборот" , задавая его увеличивается сама белая область футера (а на странице с гостиницами , где футер не абсолют - padding работает как нужно)*/
   padding-right: 101px;
   background-color: rgba(254, 254, 254, 0.9);
   min-height: 50px;
@@ -267,9 +333,10 @@ a {
 .footer-contacts {
   font-size: 21px;
   font-weight: 700;
-  width: 350px;
+  width: 360px;
+  padding: 0;
   margin: 0;
-  margin-right: 169px;
+  margin-right: 160px;
   /* Временно для сетки */
   background-color: rgba(155, 55, 0, 0.3);
 }
@@ -278,18 +345,42 @@ a {
   color: #000000;
 }
 
+.social-button {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  opacity: 0.3;
+}
+
 .footer-social {
   text-align: center;
   width: 200px;
   align-self: center;
-  /* Временно для сетки*/
-  background-color: rgba(155, 10, 150, 0.3);
 }
 
 .footer-social ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-copyright {
@@ -298,14 +389,15 @@ a {
   margin-left: 228px;
   text-align: center;
   align-self: center;
-  /* Временно для сетки */
-  background-color: rgba(15, 1, 1, 0.3);
+}
+
+.footer-copyright img:active { /*пока не придумала*/
+
 }
 
 .index-footer {
   position: absolute;
   bottom: 0;
-  left: 0;
   right: 0;
   width: 968px;
 }
@@ -341,32 +433,47 @@ a {
   justify-content: space-between;
   padding-left: 72px;
   padding-right: 73px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 22px;
 }
 
 .found-hotel figure {
   margin: 0;
+  padding-top: 5px;
   /*margin-top: 30px;*/
 }
 
 .found-hotel h3 {
   margin: 0;
+  padding: 0;
   /*margin-top: 30px;*/
 }
 
 .description-hotel {
+  padding: 0;
+  margin: 0;
   margin-left: 30px;
   margin-right: auto;
-  min-width: 252px;
+  margin-bottom: 7px;   /*это сделано т.к. большшой div "выходил за границы кнопок, не нашла каким способом его ограничить */
+  min-width: 260px;
+  background-color: lightblue;
 }
 
 .columns-container {
+  margin: 0;
+  padding: 0;
   display: flex;
 }
 
-.column-2 {
+.column-1 {
+  margin: 0;
+  padding: 0;
+  min-height: 36px;
+  align-self: center;
+}
 
+.column-2 {
+  margin-left: 6px;
 }
 
 .description-hotel h3 {
@@ -376,14 +483,42 @@ a {
 
 .description-hotel p,
 .rating {
+  margin: 0;
+  padding: 0;
   line-height: 21px;
 }
 
+.description-hotel p {
+  padding-top: 8px;
+}
+
 .rating {
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  margin-bottom: 6px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(15, 1, 255, 0.3);
+}
+
+.rating ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.rating li {
+  padding-left: 5px;
+}
+
+.rating p {
+  margin: 0;
+  background-color: #f2f2f2;
+  padding-top: 6px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+  padding-left: 16px;
 }
 
 .rating-nmb {

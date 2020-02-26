@@ -23,7 +23,7 @@
       </header>
       <main>
         <h1 class="visually-hidden">Гостиницы Седоны</h1>
-        <section>
+        <section class="filter-form">
           <h2 class="visually-hidden">Фильтр гостиниц</h2>
             <form action="sedona-hotels.html" method="get">
               <fieldset>
@@ -61,17 +61,25 @@
               <button type="submit">Показать</button>
             </form>
         </section>
-        <section> <!-- результаты поиска и сортировка -->
+        <section class ="results"> <!-- результаты поиска и сортировка -->
           <h3>Найдено: 3</h3>
-          <h3>Сортировка:</h3>
-          <ul>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
-          <div class="sorting">
-            <a href="#"><span class="visually-hidden">сортировка от наименьшего к наибольшему</span></a>
-            <a href="#"><span class="visually-hidden">сортировка от наибольшего к наименьшему</span></a>
+            <div class="sorting-list">
+              <h3>Сортировка:</h3>
+              <ul>
+                <li><a class="sort-selected" href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По рейтингу</a></li>
+              </ul>
+            </div>
+          <div class="sorting-buttons">
+            <a href="#"><span class="visually-hidden">сортировка от наименьшего к наибольшему</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
+              </a>
+            <a href="#"><span class="visually-hidden">сортировка от наибольшего к наименьшему</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#cacaca" d="M5.5 10L0 0h11"/></svg>
+            </a>
           </div>
         </section>
         <section class="all-found-hotels">
@@ -161,8 +169,7 @@
             #visitSEDONA <br>
             <a href="tel:+74956660266">Тел:+7(495) 666-02-66</a>
           </p>
-          <div class="footer-social"> <!-- не контентные изображения-->
-            <ul>
+            <ul class="footer-social-list">
               <li>
                 <a class="social-button" href="#">
                   <span class="visually-hidden">Twitter</span>
@@ -190,7 +197,6 @@
                 </a>
               </li>
             </ul>
-          </div>
           <p class="footer-copyright">Website by
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo/logo-htmla.svg" width ="115" height="41" alt="HTML-Academia">

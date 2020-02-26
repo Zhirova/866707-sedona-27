@@ -34,6 +34,8 @@ a {
   color: #000000;
   font-weight: 700;
   background-color: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-selected {
@@ -87,6 +89,7 @@ a {
 }
 
 .site-navigation a:active {
+  color: #000000;
   opacity: 0.3;
 }
 
@@ -98,6 +101,7 @@ a {
 }
 
 .welcome-sedona {
+  position: relative;
   background-image: url("../img/bg/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: center -82px;
@@ -108,13 +112,12 @@ a {
 }
 
 .mask {
-  /* Я хотела добавить маску через позиционирование блока с задним фоном (ему relative, здесь absolute, но когда задала relative,
-  лого в навигации "ушел на задний план", его нижний конец стала перекрывать эта большая фото. Наверное чтобы этого избежать надо тогда и лого абсолютно позиционировать ) */
   position: absolute;
   background-repeat: no-repeat;
-  top: 507px;
-  width: 1203px;
-  height: 59px;
+  bottom: 0;
+  height: 57px;
+  left: 0;
+  right: 0;
   background-image: url("../img/bg/intro-mask.svg");
 }
 
@@ -136,13 +139,13 @@ a {
   line-height: 26px;
   font-weight: 700;
   margin-top: 0;
+  margin-bottom: 27px;
 }
 
 .about-sedona p {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 27px;
 }
 
 .hotel-search {
@@ -161,7 +164,7 @@ a {
   font-weight: 700;
 }
 
-.hotel-search p {
+.hotel-search-text {
   margin: 0;
   padding: 0;
   margin-top: 23px;
@@ -169,35 +172,79 @@ a {
   font-weight: 400;
 }
 
+.brown-button-big {
+  font-size: 21px;
+  margin-top: 45px;
+  height: 88px;
+  width: 568px;
+}
+
 .search-form {
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 291px;
-  left: 318px;
+  top: 100%;
+  margin-top: -57px;
+  left: 50%;
+  margin-left: -284px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: stretch;
-  justify-content: center;
+  /* justify-content: center; */
   background-color: #ffffff;
   text-align: left;
-  padding-top: 30px;
-  width: 568px;
-  height: 360px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  padding-left: 55px;
+  padding-right: 55px;
+  width: 460px;
+  min-height: 300px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
+.search-form-item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+}
+
 .search-form-item input{
-  margin-left: 21px;
-  width: 345px;
-  min-height: 38px;
+  /* margin-left: 21px; */
+  width: 330px;
+  min-height: 36px;
+  /* padding-right: 9px; */
+  padding-left: 13px;
+}
+
+.search-form input::-webkit-outer-spin-button,      /* очистить стрелки из поля number  */
+.search-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.form-item-arrival {
+  margin-right: 19px;
+}
+
+/* .search-form label:nth-child(2) {
+} */
+
+.form-item-departure  {  /* я хотела задать margin-right элементу ,через псевдокласс :nth-child, но не получилось */
+  margin-right: 15px;
+}
+
+.people-counter-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .people-counter {
+  margin: 0;
+  padding: 0;
   background-color: green;
-  width: 260px;
+  /* width: 260px; */
   min-height: 38px;
+  margin-bottom: 30px;
   /* align-self: flex-end; */
 }
 
@@ -207,8 +254,8 @@ a {
   /* align-self: flex-end; */
 }
 
-.people-counter label{
-  margin-left: 30px;
+.people-counter label {
+  margin-right: 20px;
 }
 
 .hotel-search label {
@@ -238,7 +285,7 @@ a {
 .brown-button {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 21px;
   font-weight: 700;
   outline: none;
@@ -248,7 +295,7 @@ a {
   border: none;
   display: inline-block;
   vertical-align: top;
-  height: 27px;
+  /* height: 27px; */
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -261,14 +308,6 @@ a {
 .brown-button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.brown-button-big {
-  font-size: 21px;
-  margin-top: 45px;
-  height: 86px;
-  padding-left: 141px;
-  padding-right: 142px;
 }
 
 .column-2 .brown-button {
@@ -299,11 +338,12 @@ a {
 
 .blue-button-big {
   font-size: 21px;
-  margin-top: 55px;
+  /* margin-top: 55px; */
   padding-top: 17px;
   padding-bottom: 22px;
-  padding-left: 196px;
-  padding-right: 196px;
+  width: 100%;
+  /* padding-left: 196px;
+  padding-right: 196px; */
 }
 
 .blue-button:hover,
@@ -330,6 +370,14 @@ a {
   min-height: 50px;
 }
 
+.index-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 968px;
+}
+
 .footer-contacts {
   font-size: 21px;
   font-weight: 700;
@@ -343,6 +391,19 @@ a {
 
 .footer-contacts a {
   color: #000000;
+}
+
+.footer-social-list {
+  background-color: rgba(155, 10, 150, 0.3);
+  text-align: center;
+  align-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 250px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .social-button {
@@ -367,22 +428,6 @@ a {
   opacity: 0.3;
 }
 
-.footer-social {
-  text-align: center;
-  width: 200px;
-  align-self: center;
-}
-
-.footer-social ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  width: 150px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .footer-copyright {
   margin: 0;
   width: 300px;
@@ -395,14 +440,76 @@ a {
 
 }
 
-.index-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 968px;
+/* Для страницы sedona-hotels*/
+.results {
+  background-color: white;
 }
 
-/* Для страницы sedona-hotels*/
+.results h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+
+.sorting-list h3,
+.sorting-list li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+.sorting-list li {
+  list-style: none;
+}
+
+.sorting-list a {
+  color: #000000;
+  opacity: 0.7;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list .sort-selected {
+  color: #81b3d2;
+  border: none;
+}
+
+.sorting-list a:hover,
+.sorting-list a:focus {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list a:active {
+  color: #000000;
+  border-bottom: 0px;
+}
+
+.sorting-buttons path:hover,  /*при фокусе табом не становится черным*/
+.sorting-buttons path:focus {
+  fill: #000000;
+}
+
+.sorting-buttons path:active {
+  fill: #81b3d2;
+}
+
+.filter-form legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+  color: #ffffff;   /*уточнить цвет*/
+}
+
+.filter-form label {
+  color: #ffffff;
+}
+
+.filter-form fieldset {
+  border:0 none;
+}
+
 .description-hotel .name-hotel{
   color: #000000;
 }

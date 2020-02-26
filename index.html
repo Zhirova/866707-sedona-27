@@ -91,30 +91,35 @@
 
         <section class="hotel-search">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotel-search-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="brown-button brown-button-big" type="button">Поиск гостиницы в Седоне</button>
           <form class="search-form" action="index.html" method="post">
             <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
             <p class="search-form-item">
-              <label for="arrival-date">Дата заезда:</label>
+              <label class="form-item-arrival" for="arrival-date">Дата заезда:</label>
               <input id="arrival-date" type="date" name="arrival-date" value="2017-04-24">
             </p>
             <p class="search-form-item">
-              <label for="departure-date">Дата выезда:</label>
+              <label class="form-item-departure" for="departure-date">Дата выезда:</label>
               <input id="departure-date" type="date" name="departure-date" value="2017-07-04">
             </p>
-            <p class="people-counter">
-              <label for="adult">Взрослые:</label>
-              <button type="button">-</button>
-              <input id="adult" type="number" name="adult" value="2">
-              <button type="button">+</button>
-            </p>
-            <p class="people-counter">
-              <label for="child">Дети:</label>
-              <button type="button">-</button>
-              <input id="child" type="number" name="child" value="0">
-              <button type="button">+</button>
-            </p>
+              <p class="people-counter">
+                <span class="people-counter-container">  <!-- для выравнивания  -->
+                  <label for="adult">Взрослые:</label>
+                  <button type="button">-</button>
+                  <input id="adult" type="number" name="adult" value="2">
+                  <button type="button">+</button>
+                </p>
+                </span>
+                <p class="people-counter">
+                  <span class="people-counter-container">  <!-- для выравнивания  -->
+                    <label for="child">Дети:</label>
+                    <button type="button">-</button>
+                    <input id="child" type="number" name="child" value="0">
+                    <button type="button">+</button>
+                  </span>
+              </p>
+
             <button type="submit" class="blue-button blue-button-big">Найти</button>
           </form>
 
@@ -127,8 +132,7 @@
             #visitSEDONA <br>
             <a href="tel:+74956660266">Тел:+7(495) 666-02-66</a>
           </p>
-          <div class="footer-social"> 
-            <ul>
+            <ul class="footer-social-list">
               <li>
                 <a class="social-button" href="#">
                   <span class="visually-hidden">Twitter</span>
@@ -156,7 +160,6 @@
                 </a>
               </li>
             </ul>
-          </div>
           <p class="footer-copyright">Website by
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo/logo-htmla.svg" width ="115" height="41" alt="HTML-Academia">

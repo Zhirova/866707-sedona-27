@@ -43,7 +43,7 @@ a {
   border: none;
   display: inline-block;
   vertical-align: top;
-  /* height: 27px; */
+  height: 27px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -179,6 +179,57 @@ a {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+                                  /* преимущества Седоны  */
+.reasons-list {
+  list-style: none;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.description-column {          /* первая большая причина */
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.description-column h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.description-column p {
+  margin: 0;
+  padding: 0;
+}
+
+.big-reason-advantages {
+  background-color: #ffffff;
+}
+
+.big-reason-advantages h3 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.big-reason-advantages p {
+  margin: 0;
+}
+
+.small-reason {
+  background-color: #eeeeee;
+}
+
+.small-reason h3 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.small-reason p {
+  margin: 0;
 }
 
 .hotel-search {
@@ -475,7 +526,7 @@ a {
 
 /* Для страницы sedona-hotels*/
 .results {
-  background-color: white;
+  background-color: #fefefe;
 }
 
 .results h3 {
@@ -505,34 +556,43 @@ a {
 
 .sorting-list .sort-selected {
   color: #81b3d2;
-  border: none;
+  border-color: transparent;
 }
 
-.sorting-list a:hover,
-.sorting-list a:focus {
+.sorting-list a:not(.sort-selected):hover,
+.sorting-list a:not(.sort-selected):focus {
   color: #81b3d2;
-  border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-list a:active {
+.sorting-list a:not(.sort-selected):active {
   color: #000000;
-  border-bottom: 0px;
+  border-color: transparent;
 }
 
-.sorting-buttons path:hover,  /*при фокусе табом не становится черным*/
-.sorting-buttons path:focus {
+.sorting-item path:hover,
+.sorting-item path:focus {
   fill: #000000;
 }
 
-.sorting-buttons path:active {
+.sorting-item path:active {
   fill: #81b3d2;
+}
+
+.filter-form {
+  background-image: url(../img/bg/filter-background.jpg);
+  width: 1200px;
+  height: 217px;
+  background-color: #4a789d;
+  background-repeat: no-repeat;
+  background-position: center -295px;
+  /* background-size: cover; */
 }
 
 .filter-form legend {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.31;
-  color: #ffffff;   /*уточнить цвет*/
+  color: #ffffff;
 }
 
 .filter-form label {

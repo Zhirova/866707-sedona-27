@@ -30,6 +30,39 @@ a {
   box-shadow: 0px 5px 15px 0 rgba(0,1,1,0.2);
 }
 
+.brown-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  /* font-size: 14px; */
+  line-height: 21px;
+  font-weight: 700;
+  outline: none;
+  color: #ffffff;
+  text-align: center;
+  background-color: #766357;
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  /* height: 27px; */
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.blue-button {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  outline: none;
+  color: #ffffff;
+  text-align: center;
+  background-color: #81b3d2;
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .main-navigation {
   color: #000000;
   font-weight: 700;
@@ -195,10 +228,10 @@ a {
   background-color: #ffffff;
   text-align: left;
   padding-top: 55px;
-  padding-bottom: 55px;
+  padding-bottom: 40px;
   padding-left: 55px;
   padding-right: 55px;
-  width: 460px;
+  width: 458px;
   min-height: 300px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
@@ -207,11 +240,16 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 27px;
+  position: relative;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;      /*вдоль поперечной оси*/
 }
 
 .search-form-item input{
-  /* margin-left: 21px; */
   width: 330px;
+  margin-left: 9px;
   min-height: 36px;
   /* padding-right: 9px; */
   padding-left: 13px;
@@ -222,40 +260,62 @@ a {
   -webkit-appearance: none;
 }
 
-.form-item-arrival {
-  margin-right: 19px;
+.search-form input::-webkit-clear-button {    /* очистить крестик из календаря*/
+  display: none;
 }
 
-/* .search-form label:nth-child(2) {
-} */
+.input-calendar {
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -11px;
+  fill: #a9a9a9;
+}
 
-.form-item-departure  {  /* я хотела задать margin-right элементу ,через псевдокласс :nth-child, но не получилось */
-  margin-right: 15px;
+.people-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: green;
+  min-height: 38px;
+  margin-bottom: 50px;
+  flex-grow: 1;
 }
 
 .people-counter-container {
   display: flex;
-  justify-content: flex-end;
-}
-
-.people-counter {
-  margin: 0;
-  padding: 0;
-  background-color: green;
-  /* width: 260px; */
-  min-height: 38px;
-  margin-bottom: 30px;
-  /* align-self: flex-end; */
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 135px;
 }
 
 .people-counter input{
   width: 40px;
-  height: 38px;
-  /* align-self: flex-end; */
+  min-height: 38px;
+  text-align: center;
 }
 
 .people-counter label {
-  margin-right: 20px;
+  /* margin-right: 40px; */
+}
+
+.people-counter button {
+  outline: none;
+  border: none;
+  background-color: #f2f2f2;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #a9a9a9;
+  font-size: 26px;
+  font-weight: 800;
 }
 
 .hotel-search label {
@@ -282,24 +342,6 @@ a {
   border: 2px solid #e5e5e5;
 }
 
-.brown-button {
-  font-family: "PT Sans", Arial, sans-serif;
-  text-transform: uppercase;
-  /* font-size: 14px; */
-  line-height: 21px;
-  font-weight: 700;
-  outline: none;
-  color: #ffffff;
-  text-align: center;
-  background-color: #766357;
-  border: none;
-  display: inline-block;
-  vertical-align: top;
-  /* height: 27px; */
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .brown-button:hover,
 .brown-button:focus {
   background-color: #604e43;
@@ -314,21 +356,6 @@ a {
   margin-top: 14px;
 }
 
-.blue-button {
-  font-family: "PT Sans", Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  outline: none;
-  color: #ffffff;
-  text-align: center;
-  background-color: #81b3d2;
-  border: none;
-  display: inline-block;
-  vertical-align: top;
-}
-
 .blue-button-detail {
   height: 27px;
   margin-top: 14px;
@@ -340,7 +367,7 @@ a {
   font-size: 21px;
   /* margin-top: 55px; */
   padding-top: 17px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
   width: 100%;
   /* padding-left: 196px;
   padding-right: 196px; */
@@ -375,7 +402,6 @@ a {
   bottom: 0;
   right: 0;
   left: 0;
-  width: 968px;
 }
 
 .footer-contacts {
@@ -429,6 +455,8 @@ a {
 }
 
 .footer-copyright {
+  display: flex;
+  align-items: center;
   margin: 0;
   width: 300px;
   margin-left: 228px;
@@ -436,8 +464,13 @@ a {
   align-self: center;
 }
 
-.footer-copyright img:active { /*пока не придумала*/
+.footer-copyright path:hover,
+.footer-copyright path:focus {
+  fill: #81b3d2;
+}
 
+.footer-copyright path:active {
+  fill: #bdbbbc
 }
 
 /* Для страницы sedona-hotels*/

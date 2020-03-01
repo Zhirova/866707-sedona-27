@@ -275,16 +275,20 @@ a {
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: stretch;
-  /* justify-content: center; */
   background-color: #ffffff;
   text-align: left;
-  padding-top: 55px;
+  padding-top: 54px;
   padding-bottom: 40px;
   padding-left: 55px;
   padding-right: 55px;
   width: 458px;
   min-height: 300px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
+.search-form input {
+  height: 36px;
+  text-transform: uppercase;
 }
 
 .search-form-item {
@@ -295,15 +299,27 @@ a {
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
-  align-items: center;      /*вдоль поперечной оси*/
+  align-items: center;
 }
 
 .search-form-item input{
-  width: 330px;
+  padding: 0;
+  width: 300px;
   margin-left: 9px;
-  min-height: 36px;
-  /* padding-right: 9px; */
+  padding-right: 30px;
   padding-left: 13px;
+}
+
+::-webkit-input-placeholder {
+  color: #000000;
+}
+
+::-moz-placeholder {
+  color: #000000;
+}
+
+::-ms-input-placeholder {
+  color: #000000;
 }
 
 .search-form input::-webkit-outer-spin-button,      /* очистить стрелки из поля number  */
@@ -311,31 +327,42 @@ a {
   -webkit-appearance: none;
 }
 
-.search-form input::-webkit-clear-button {    /* очистить крестик из календаря*/
-  display: none;
-}
-
 .input-calendar {
   outline: none;
   border: none;
   margin: 0;
   padding: 0;
+  width: 21px;
+  height: 38px;
   position: absolute;
   right: 10px;
-  top: 50%;
-  margin-top: -11px;
+  top: 0;
+  margin-top: 2px;
+  background-color: transparent;
   fill: #a9a9a9;
+  cursor: pointer;
+}
+
+.input-calendar:hover,
+.input-calendar:focus {
+  background-color: transparent;
+  fill: #231f20;
+}
+
+.input-calendar:active {
+  background-color: transparent;
+  fill: #81b3d2;
 }
 
 .people-counter {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-basis: 50%;
   margin: 0;
   padding: 0;
-  background-color: green;
   min-height: 38px;
-  margin-bottom: 50px;
+  margin-bottom: 54px;
   flex-grow: 1;
 }
 
@@ -343,12 +370,12 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  min-width: 135px;
 }
 
 .people-counter input{
-  width: 40px;
-  min-height: 38px;
+  padding: 0;
+  width: 34px;
+  height: 34px;
   text-align: center;
 }
 
@@ -356,17 +383,29 @@ a {
   /* margin-right: 40px; */
 }
 
+.people-counter:nth-child(2n + 1) label {
+  margin-left: 50px;
+}
+
 .people-counter button {
   outline: none;
   border: none;
   background-color: #f2f2f2;
-  padding-left: 13px;
-  padding-right: 13px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  width: 38px;
+  height: 38px;
   color: #a9a9a9;
   font-size: 26px;
   font-weight: 800;
+  cursor: pointer;
+}
+
+.people-counter button:hover,
+.people-counter button:focus {
+  color: #231f20;
+}
+
+.people-counter button:active {
+  color: #81b3d2
 }
 
 .hotel-search label {
@@ -378,7 +417,7 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  outline: none;   /* убрала голубую "браузерную" обводку пока элемент в фокусе*/
+  outline: none;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
 }
@@ -455,6 +494,11 @@ a {
   left: 0;
 }
 
+/* .map {
+  position: relative;
+  z-index: 0;
+} */
+
 .footer-contacts {
   font-size: 21px;
   font-weight: 700;
@@ -515,12 +559,12 @@ a {
   align-self: center;
 }
 
-.footer-copyright path:hover,
-.footer-copyright path:focus {
+.footer-copyright-link:hover path,
+.footer-copyright-link:focus path {
   fill: #81b3d2;
 }
 
-.footer-copyright path:active {
+.footer-copyright-link:active path {
   fill: #bdbbbc
 }
 

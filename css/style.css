@@ -164,7 +164,7 @@ a {
   text-align: center;
   background-color: #ffffff;
   padding-top: 61px;
-  padding-bottom: 56px;
+  padding-bottom: 52px;
 }
 
 .about-sedona h1 {
@@ -176,20 +176,37 @@ a {
 }
 
 .about-sedona p {
+  margin: 0;
+  padding: 0;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
                                   /* преимущества Седоны  */
 .reasons-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
   line-height: 1.5;
   text-align: center;
 }
 
+.big-reason {
+  min-height: 140px;
+  display: flex;
+}
+
+
 .description-column {          /* первая большая причина */
+  margin: 0;
   background-color: #81b3d2;
   color: #ffffff;
+  width: 400px;
+  min-height: 140px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .description-column h2 {
@@ -203,8 +220,23 @@ a {
   padding: 0;
 }
 
+.big-reason-img img {
+  vertical-align: top;
+}
+
+.big-reason-advantages-container {     /* причины к первой большой причине */
+  display: flex;
+}
+
 .big-reason-advantages {
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
+  width: 400px;
+  padding-top: 60px;
+  padding-bottom: 85px;
+  padding-left: 73px;
+  padding-right: 133px;
 }
 
 .big-reason-advantages h3 {
@@ -218,8 +250,17 @@ a {
   margin: 0;
 }
 
+.small-reason-container {
+  display: flex;
+}
+
 .small-reason {
   background-color: #eeeeee;
+  width: 400px;
+  padding-top: 50px;
+  padding-bottom: 63px;
+  padding-left: 95px;
+  padding-right: 166px;
 }
 
 .small-reason h3 {
@@ -479,9 +520,7 @@ a {
   align-items: flex-start;
   padding-top: 30px;
   padding-bottom: 32px;
-  padding-left: 132px;
-  /*Здесь для РР нужно чуть левее сдвинуть контакты, и видимо из-за абсолютного позиционирования padding
-  работает "наоборот" , задавая его увеличивается сама белая область футера (а на странице с гостиницами , где футер не абсолют - padding работает как нужно)*/
+  padding-left: 125px;
   padding-right: 101px;
   background-color: rgba(254, 254, 254, 0.9);
   min-height: 50px;
@@ -505,9 +544,7 @@ a {
   width: 360px;
   padding: 0;
   margin: 0;
-  margin-right: 160px;
-  /* Временно для сетки */
-  background-color: rgba(155, 55, 0, 0.3);
+  margin-right: 178px;
 }
 
 .footer-contacts a {
@@ -515,14 +552,13 @@ a {
 }
 
 .footer-social-list {
-  background-color: rgba(155, 10, 150, 0.3);
   text-align: center;
   align-self: center;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  width: 250px;
+  width: 240px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -553,10 +589,18 @@ a {
   display: flex;
   align-items: center;
   margin: 0;
-  width: 300px;
+  width: 320px;
   margin-left: 228px;
   text-align: center;
   align-self: center;
+}
+
+.footer-copyright span {
+  margin-right: 8px;
+}
+
+.footer-copyright-link {
+  display: block;
 }
 
 .footer-copyright-link:hover path,
@@ -613,12 +657,16 @@ a {
   border-color: transparent;
 }
 
-.sorting-item path:hover,
-.sorting-item path:focus {
+.sorting-item-selected path{
+  fill: #81b3d2;
+}
+
+.sorting-item:hover path,
+.sorting-item:focus path {
   fill: #000000;
 }
 
-.sorting-item path:active {
+.sorting-item:active path {
   fill: #81b3d2;
 }
 

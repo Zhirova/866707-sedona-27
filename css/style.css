@@ -197,33 +197,47 @@ a {
 .big-reason {
   min-height: 140px;
   flex-basis: 100%;
+  display: flex;
+  background-color: lightblue;
 }
 
 
 .description-column {          /* первая большая причина */
   margin: 0;
+  line-height: 21px;
   background-color: #81b3d2;
   color: #ffffff;
-  width: 400px;
+  /* width: 280px; */
   min-height: 140px;
   padding-top: 46px;
-  padding-bottom: 64px;
-  /* padding-left: 60px; */
-  /* padding-right: 60px; */
+  padding-bottom: 57px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .description-column h2 {
   margin: 0;
+  padding: 0;
   font-size: 21px;
   font-weight: 700;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
 }
 
-.description-column p {
+.reason-number {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.reason-text {
   margin: 0;
   padding: 0;
+  width: 280px;
 }
 
-.big-reason-img img {
+.big-reason-img {
   vertical-align: top;
 }
 
@@ -238,9 +252,9 @@ a {
   padding: 0;
   background-color: #ffffff;
   width: 400px;
-  padding-top: 60px;
-  padding-bottom: 85px;
-  padding-left: 73px;
+  padding-top: 155px;
+  padding-bottom: 80px;
+  padding-left: 55px;
   padding-right: 133px;
 }
 
@@ -248,11 +262,45 @@ a {
   margin: 0;
   font-size: 21px;
   font-weight: 700;
-  line-height: 1;
+  margin-left: 77px;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .big-reason-advantages p {
   margin: 0;
+  width: 290px;
+}
+
+.big-reason-advantages-housing {
+  background-image: url(../img/bg/icon-reason1.svg);
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+}
+
+.big-reason-advantages-food {
+  background-image: url(../img/bg/icon-reason3.svg);
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+}
+
+.big-reason-advantages-souvenirs {
+  background-image: url(../img/bg/icon-reason2.svg);
+  background-repeat: no-repeat;
+  background-position: top 60px center;
+}
+
+.description-column-second {
+  padding-left: 40px;
+  width: 300px;
+}
+
+.description-column-second h2{
+  margin-left: 80px;
+}
+
+.description-column-second p{
+  width: 320px;
 }
 
 .small-reason {
@@ -260,18 +308,27 @@ a {
   width: 400px;
   padding-top: 50px;
   padding-bottom: 63px;
-  padding-left: 95px;
-  padding-right: 166px;
+  padding-left: 65px;
+  padding-right: 67px;
 }
 
 .small-reason h3 {
   margin: 0;
+  width: 150px;
+  line-height: 1;
   font-size: 21px;
   font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 23px;
 }
 
 .small-reason p {
   margin: 0;
+}
+
+.small-reason .reason-number {
+  margin-bottom: 20px;
 }
 
 .hotel-search {

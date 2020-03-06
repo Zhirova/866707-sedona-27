@@ -28,49 +28,77 @@
             <form action="sedona-hotels.html" method="get">
               <fieldset>
                 <legend>Инфраструктура:</legend>
-                <input id="pool" type="checkbox" name="pool" checked>
-                <label for="pool">Бассейн</label>
-                <input id="parking" type="checkbox" name="parking">
-                <label for="parking">Парковка</label>
-                <input id="wi-fi" type="checkbox" name="wi-fi">
-                <label for="wi-fi">Wi-Fi</label>
+                <div class="filter-item">
+                  <label for="pool" class="form-checkbox">Бассейн
+                    <input id="pool" type="checkbox" name="pool" class="visually-hidden" checked>
+                    <span class="checkbox-indicator"></span>
+                  </label>
+                </div>
+                <div class="filter-item">
+                <label for="parking" class="form-checkbox">Парковка
+                  <input id="parking" type="checkbox" class="visually-hidden" name="parking">
+                  <span class="checkbox-indicator"></span>
+                </label>
+                </div>
+                <div class="filter-item">
+                <label for="wi-fi" class="form-checkbox">Wi-Fi
+                    <input id="wi-fi" type="checkbox" class="visually-hidden" name="wi-fi">
+                    <span class="checkbox-indicator"></span>
+                </label>
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Тип жилья:</legend>
-                <input id="hotel" type="checkbox" name="hotel" checked>
-                <label for="hotel">Гостиница</label>
-                <input id="motel" type="checkbox" name="motel" checked>
-                <label for="motel">Мотель</label>
-                <input id="apartments" type="checkbox" name="apartments" checked>
-                <label for="apartments">Апартаменты</label>
-              </fieldset>
-              <fieldset>
-                <legend>Стоимость в сутки (р):</legend>
-                <div>
-                  <label for="initial-number">от</label>
-                  <input id="initial-number" type="number" name="initial-number" value="0">
+                <div class="filter-item">
+                <label for="hotel" class="form-checkbox form-checkbox-next">Гостиница
+                  <input id="hotel" type="checkbox" class="visually-hidden" name="hotel" checked>
+                  <span class="checkbox-indicator"></span>
+                </label>
                 </div>
-                <div>
-                  <label for="finite-number">до</label>
-                  <input id="finite-number" type="number" name="finite-number" value="3000">
+                <div class="filter-item">
+                <label for="motel" class="form-checkbox form-checkbox-next">Мотель
+                  <input id="motel" type="checkbox" class="visually-hidden" name="motel" checked>
+                  <span class="checkbox-indicator"></span>
+                </label>
+                </div>
+                <div class="filter-item">
+                <label for="apartments" class="form-checkbox form-checkbox-next">Апартаменты
+                  <input id="apartments" type="checkbox" class="visually-hidden" name="apartments" checked>
+                  <span class="checkbox-indicator"></span>
+                </label>
                 </div>
               </fieldset>
-              <div>
-                <input type="range" id="price" name="price" min="0" max="3000" step="1">
+              <div class="filter-range">
+                <div class="filter-range-title">
+                  <p>Стоимость в сутки (р):</p>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price" for="initial-number">от <input id="initial-number" type="number" name="initial-number" value="0">
+                  </label>
+                  <label class="max-price" for="finite-number">до <input id="finite-number" type="number" name="finite-number" value="3000">
+                  </label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
               </div>
-              <button type="submit">Показать</button>
             </form>
         </section>
         <section class ="results"> <!-- результаты поиска и сортировка -->
           <h3>Найдено: 3</h3>
-            <div class="sorting-list">
-              <h3>Сортировка:</h3>
-              <ul>
+            <!-- <div class="sorting-list-container"> -->
+              <h4>Сортировка:</h4>
+              <ul class="sorting-list">
                 <li><a class="sort-selected">По цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По рейтингу</a></li>
               </ul>
-            </div>
+            <!-- </div> -->
           <div class="sorting-buttons">
             <a class="sorting-item" href="#">
               <span class="visually-hidden">сортировка от наименьшего к наибольшему</span>

@@ -4,7 +4,7 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.86;
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
@@ -34,7 +34,7 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   /* font-size: 14px; */
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: 700;
   outline: none;
   color: #ffffff;
@@ -52,7 +52,7 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: 700;
   outline: none;
   color: #ffffff;
@@ -169,7 +169,7 @@ a {
 
 .about-sedona h1 {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.24;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 27px;
@@ -458,10 +458,6 @@ a {
   text-align: center;
 }
 
-.people-counter label {
-  /* margin-right: 40px; */
-}
-
 .people-counter:nth-child(2n + 1) label {
   margin-left: 50px;
 }
@@ -534,12 +530,9 @@ a {
 
 .blue-button-big {
   font-size: 21px;
-  /* margin-top: 55px; */
   padding-top: 17px;
   padding-bottom: 20px;
   width: 100%;
-  /* padding-left: 196px;
-  padding-right: 196px; */
 }
 
 .blue-button:hover,
@@ -653,6 +646,12 @@ a {
 /* Для страницы sedona-hotels*/
 .results {
   background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  padding-left: 72px;
+  padding-right: 73px;
+  padding-top: 31px;
+  padding-bottom: 33px;
 }
 
 .results h3 {
@@ -660,18 +659,33 @@ a {
   font-weight: 700;
   line-height: 26px;
   text-align: left;
+  margin-right: 49px;
 }
 
-.sorting-list h3,
+.results h4,
 .sorting-list li {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
 }
 
+.sorting-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: auto;
+}
+
+.results h4{
+  margin-right: 40px;
+}
+
 .sorting-list li {
   list-style: none;
+  width: 80px;
 }
 
 .sorting-list a {
@@ -710,15 +724,24 @@ a {
 
 .filter-form {
   background-image: url(../img/bg/filter-background.jpg);
-  width: 1200px;
+  width: 1055px;
   height: 217px;
   background-color: #4a789d;
   background-repeat: no-repeat;
   background-position: center -295px;
   /* background-size: cover; */
+  padding-left: 72px;
+  padding-right: 73px;
+  padding-top: 31px;
+  padding-bottom: 33px;
 }
 
-.filter-form legend {
+.filter-form form {
+  display: flex;
+}
+
+.filter-form legend,
+ .filter-form p {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.31;
@@ -730,7 +753,178 @@ a {
 }
 
 .filter-form fieldset {
-  border:0 none;
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  flex-basis: 140px;
+  margin-right: 110px;
+}
+
+                                    /* ЧЕКБОКСЫ */
+
+.form-checkbox {
+  padding-left: 27px;
+  cursor: pointer;
+}
+
+.form-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  left: 72px;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icons/checkbox-off.svg);
+}
+
+.form-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  left: 72px;
+  width: 27px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-image: url(../img/icons/checkbox-on.svg);
+}
+
+.form-checkbox-next input[type="checkbox"] + .checkbox-indicator {
+  left: 320px;
+}
+
+.form-checkbox-next input[type="checkbox"]:checked + .checkbox-indicator {
+  left: 320px;
+}
+
+/* СЛОЖНЫЙ ФИЛЬТР */
+.filter-range {
+  width: 330px;
+  color: #ffffff;
+  margin-left: auto;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 .description-hotel .name-hotel{
@@ -784,9 +978,8 @@ a {
   margin: 0;
   margin-left: 30px;
   margin-right: auto;
-  margin-bottom: 7px;   /*это сделано т.к. большшой div "выходил за границы кнопок, не нашла каким способом его ограничить */
+  margin-bottom: 7px;
   min-width: 260px;
-  background-color: lightblue;
 }
 
 .columns-container {

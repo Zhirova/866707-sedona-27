@@ -383,7 +383,7 @@ a {
 
 .search-form-item input{
   padding: 0;
-  width: 302px;
+  width: 298px;
   margin-left: 9px;
   padding-right: 35px;
   padding-left: 8px;
@@ -644,83 +644,6 @@ a {
 }
 
 /* Для страницы sedona-hotels*/
-.results {
-  background-color: #fefefe;
-  display: flex;
-  align-items: center;
-  padding-left: 72px;
-  padding-right: 73px;
-  padding-top: 31px;
-  padding-bottom: 33px;
-}
-
-.results h3 {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  margin-right: 49px;
-}
-
-.results h4,
-.sorting-list li {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
-}
-
-.sorting-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-right: auto;
-}
-
-.results h4{
-  margin-right: 40px;
-}
-
-.sorting-list li {
-  list-style: none;
-  width: 80px;
-}
-
-.sorting-list a {
-  color: #000000;
-  opacity: 0.7;
-  border-bottom: 1px dotted #81b3d2;
-}
-
-.sorting-list .sort-selected {
-  color: #81b3d2;
-  border-color: transparent;
-}
-
-.sorting-list a:not(.sort-selected):hover,
-.sorting-list a:not(.sort-selected):focus {
-  color: #81b3d2;
-}
-
-.sorting-list a:not(.sort-selected):active {
-  color: #000000;
-  border-color: transparent;
-}
-
-.sorting-item-selected path{
-  fill: #81b3d2;
-}
-
-.sorting-item:hover path,
-.sorting-item:focus path {
-  fill: #000000;
-}
-
-.sorting-item:active path {
-  fill: #81b3d2;
-}
 
 .filter-form {
   background-image: url(../img/bg/filter-background.jpg);
@@ -925,6 +848,86 @@ a {
   color: #000000;
 
   background: #ffffff;
+}
+
+/* ПОЛОСА С СОРТИРОВКОЙ */
+
+.results {
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  padding-left: 72px;
+  padding-right: 73px;
+  padding-top: 31px;
+  padding-bottom: 33px;
+}
+
+.results h3 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  margin-right: 49px;
+}
+
+.results h4,
+.sorting-list li {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+.sorting-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: auto;
+}
+
+.results h4{
+  margin-right: 40px;
+}
+
+.sorting-list li {
+  list-style: none;
+  width: 80px;
+}
+
+.sorting-list a {
+  color: #000000;
+  opacity: 0.7;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-list .sort-selected {
+  color: #81b3d2;
+  border-color: transparent;
+}
+
+.sorting-list a:not(.sort-selected):hover,
+.sorting-list a:not(.sort-selected):focus {
+  color: #81b3d2;
+}
+
+.sorting-list a:not(.sort-selected):active {
+  color: #000000;
+  border-color: transparent;
+}
+
+.sorting-item-selected path{
+  fill: #81b3d2;
+}
+
+.sorting-item:hover path,
+.sorting-item:focus path {
+  fill: #000000;
+}
+
+.sorting-item:active path {
+  fill: #81b3d2;
 }
 
 .description-hotel .name-hotel{

@@ -523,10 +523,12 @@ a {
 }
 
 .blue-button-detail {
-  height: 27px;
+  height: 20px;
   margin-top: 14px;
   padding-left: 17px;
   padding-right: 17px;
+  padding-top: 4px;
+   padding-bottom: 3px;
 }
 
 .blue-button-big {
@@ -863,7 +865,7 @@ a {
   padding-left: 72px;
   padding-right: 65px;
   padding-top: 31px;
-  padding-bottom: 33px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -977,13 +979,13 @@ a {
   justify-content: space-between;
   padding-left: 72px;
   padding-right: 73px;
-  padding-top: 25px;
+  padding-top: 17px;
   padding-bottom: 22px;
 }
 
 .found-hotel figure {
   margin: 0;
-  padding-top: 5px;
+  padding-top: 10px;
   /*margin-top: 30px;*/
 }
 
@@ -1028,14 +1030,10 @@ a {
   line-height: 21px;
 }
 
-.description-hotel p {
-  padding-top: 8px;
-}
-
 .rating {
   margin: 0;
   padding: 0;
-  padding-top: 3px;
+  padding-top: 10px;
   margin-bottom: 6px;
   display: flex;
   flex-direction: column;
@@ -1055,9 +1053,9 @@ a {
 .rating p {
   margin: 0;
   background-color: #f2f2f2;
-  padding-top: 6px;
+  padding-top: 3px;
   padding-right: 13px;
-  padding-bottom: 6px;
+  padding-bottom: 3px;
   padding-left: 16px;
 }
 

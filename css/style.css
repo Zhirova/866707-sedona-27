@@ -340,6 +340,7 @@ a {
   margin-top: 45px;
   height: 88px;
   width: 568px;
+  cursor: pointer;
 }
 
 .search-form {
@@ -533,6 +534,7 @@ a {
   padding-top: 17px;
   padding-bottom: 20px;
   width: 100%;
+  cursor: pointer;
 }
 
 .blue-button:hover,
@@ -647,28 +649,32 @@ a {
 
 .filter-form {
   background-image: url(../img/bg/filter-background.jpg);
-  width: 1055px;
-  height: 217px;
+  min-height: 165px;
   background-color: #4a789d;
   background-repeat: no-repeat;
   background-position: center -295px;
   /* background-size: cover; */
   padding-left: 72px;
-  padding-right: 73px;
-  padding-top: 31px;
-  padding-bottom: 33px;
+  padding-right: 74px;
+  padding-top: 28px;
+  padding-bottom: 5px;
 }
 
 .filter-form form {
   display: flex;
 }
 
-.filter-form legend,
- .filter-form p {
+.filter-form p {
+  margin: 0;
+  padding: 0;
+}
+
+.filter-form legend {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.31;
   color: #ffffff;
+  margin-bottom: 21px;
 }
 
 .filter-form label {
@@ -679,53 +685,62 @@ a {
   margin: 0;
   padding: 0;
   border: 0 none;
-  flex-basis: 140px;
-  margin-right: 110px;
+  flex-basis: 200px;
+  margin-right: 55px;
 }
 
                                     /* ЧЕКБОКСЫ */
 
+
 .form-checkbox {
-  padding-left: 27px;
+  padding-left: 39px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   cursor: pointer;
+  position: relative;
 }
 
 .form-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  left: 72px;
-  width: 23px;
+  top: 0;
+  left: 0;
+  width: 27px;
   height: 23px;
   background-repeat: no-repeat;
   background-image: url(../img/icons/checkbox-off.svg);
 }
 
 .form-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
-  position: absolute;
-  left: 72px;
-  width: 27px;
-  height: 23px;
   background-repeat: no-repeat;
   background-image: url(../img/icons/checkbox-on.svg);
 }
 
-.form-checkbox-next input[type="checkbox"] + .checkbox-indicator {
-  left: 320px;
+.form-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: 2px solid #6a6a6a;
 }
 
-.form-checkbox-next input[type="checkbox"]:checked + .checkbox-indicator {
-  left: 320px;
+.form-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  background-image: url(../img/icons/checkbox-off-disabled.svg);
 }
+
+.form-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  background-image: url(../img/icons/checkbox-on-disabled.svg);
+}
+
+.filter-item {
+  margin-bottom: 22px;
+}
+
 
 /* СЛОЖНЫЙ ФИЛЬТР */
 .filter-range {
-  width: 330px;
+  width: 314px;
   color: #ffffff;
   margin-left: auto;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -733,12 +748,9 @@ a {
 
 .price-controls {
   position: relative;
-
   height: 36px;
   margin-bottom: 20px;
-
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -748,64 +760,59 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
   width: 90px;
   padding-left: 65px;
+}
+
+.price-controls .max-price {
+  width: 90px;
+  margin-left: 10px;
+  padding-left: 55px;
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
 
@@ -832,12 +839,10 @@ a {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -846,7 +851,6 @@ a {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
@@ -857,17 +861,19 @@ a {
   display: flex;
   align-items: center;
   padding-left: 72px;
-  padding-right: 73px;
+  padding-right: 65px;
   padding-top: 31px;
   padding-bottom: 33px;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .results h3 {
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-align: left;
-  margin-right: 49px;
+  width: 165px;
 }
 
 .results h4,
@@ -884,16 +890,19 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  min-width: 400px;
   margin-right: auto;
 }
 
 .results h4{
-  margin-right: 40px;
+  /* margin-left: 5px; */
+  margin-right: 8px;
 }
 
 .sorting-list li {
   list-style: none;
-  width: 80px;
+  margin-left: 33px;
 }
 
 .sorting-list a {
@@ -915,6 +924,14 @@ a {
 .sorting-list a:not(.sort-selected):active {
   color: #000000;
   border-color: transparent;
+}
+
+.sorting-buttons {
+  min-width: 45px;
+}
+
+.sorting-item:first-child {
+  margin-right: 10px;
 }
 
 .sorting-item-selected path{

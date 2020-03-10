@@ -314,8 +314,7 @@ a {
 .hotel-search {
   position: relative;
   text-align: center;
-  padding-top: 47px;
-  /* padding-bottom: 57px; */
+  padding-top: 52px;
   background-color: #ffffff;
 }
 
@@ -348,7 +347,6 @@ a {
   padding: 0;
   position: absolute;
   top: 100%;
-  /* margin-top: -57px; */
   left: 50%;
   margin-left: -284px;
   display: flex;
@@ -713,7 +711,6 @@ a {
 }
 
 .form-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
-  background-repeat: no-repeat;
   background-image: url(../img/icons/checkbox-on.svg);
 }
 

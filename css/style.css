@@ -355,7 +355,7 @@ a {
   align-items: stretch;
   background-color: #ffffff;
   text-align: left;
-  padding-top: 54px;
+  padding-top: 52px;
   padding-bottom: 40px;
   padding-left: 55px;
   padding-right: 55px;
@@ -372,7 +372,7 @@ a {
 .search-form-item {
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   position: relative;
   display: flex;
   flex-basis: 100%;
@@ -440,7 +440,7 @@ a {
   margin: 0;
   padding: 0;
   min-height: 38px;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
   flex-grow: 1;
 }
 
@@ -531,8 +531,8 @@ a {
 
 .blue-button-big {
   font-size: 21px;
-  padding-top: 17px;
-  padding-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 14px;
   width: 100%;
   cursor: pointer;
 }
@@ -551,8 +551,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 30px;
-  padding-bottom: 32px;
+  padding-top: 33px;
+  padding-bottom: 42px;
   padding-left: 125px;
   padding-right: 101px;
   background-color: rgba(254, 254, 254, 0.9);
@@ -566,18 +566,14 @@ a {
   left: 0;
 }
 
-/* .map {
-  position: relative;
-  z-index: 0;
-} */
-
 .footer-contacts {
   font-size: 21px;
   font-weight: 700;
-  width: 360px;
+  line-height: 1.24;
+  width: 370px;
   padding: 0;
   margin: 0;
-  margin-right: 178px;
+  margin-right: 170px;
 }
 
 .footer-contacts a {
@@ -591,7 +587,7 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 240px;
+  width: 241px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -634,6 +630,7 @@ a {
 
 .footer-copyright-link {
   display: block;
+  margin-top: 6px;
 }
 
 .footer-copyright-link:hover path,
@@ -733,7 +730,7 @@ a {
 
 /* СЛОЖНЫЙ ФИЛЬТР */
 .filter-range {
-  width: 314px;
+  width: 316px;
   color: #ffffff;
   margin-left: auto;
 }
@@ -747,7 +744,7 @@ a {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 34px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid #ffffff;
@@ -768,8 +765,7 @@ a {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  vertical-align: center;
   cursor: pointer;
 }
 
@@ -781,7 +777,7 @@ a {
 .price-controls .max-price {
   width: 90px;
   margin-left: 10px;
-  padding-left: 55px;
+  padding-left: 45px;
 }
 
 .price-controls input {
@@ -977,7 +973,7 @@ a {
   padding-left: 72px;
   padding-right: 73px;
   padding-top: 17px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 }
 
 .found-hotel figure {

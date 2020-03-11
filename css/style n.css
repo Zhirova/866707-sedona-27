@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 body {
   margin: 0;
   padding: 0;
@@ -244,7 +242,7 @@ a {
 
 .big-reason-advantages,
 .small-reason {
-  /* flex-basis: 400px; */
+  flex-basis: 400px;
   box-sizing: border-box;
 }
 
@@ -399,10 +397,6 @@ a {
 }
 
 ::-ms-input-placeholder {
-  color: #000000;
-}
-
-:-ms-input-placeholder {
   color: #000000;
 }
 
@@ -632,7 +626,6 @@ a {
 
 .footer-copyright span {
   margin-right: 8px;
-  min-width: 75px;
 }
 
 .footer-copyright-link {
@@ -1014,8 +1007,7 @@ a {
   margin: 0;
   padding: 0;
   min-height: 36px;
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-right: 6px;
 }
 

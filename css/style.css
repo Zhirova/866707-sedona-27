@@ -112,11 +112,12 @@ a {
 
 .site-navigation li:nth-child(4n + 3) {
   text-align: right;
-  margin-left: 100px;
+  margin-left: 95px;
 }
 
 .site-navigation li:nth-child(4n + 4) {
   text-align: right;
+  margin-left: 5px;
 }
 
 .site-navigation a:hover,
@@ -292,7 +293,7 @@ a {
 .big-reason-advantages-souvenirs {
   background-image: url(../img/bg/icon-reason2.svg);
   background-repeat: no-repeat;
-  background-position: top 60px center;
+  background-position: top 55px center;
 }
 
 .small-reason {
@@ -374,7 +375,7 @@ a {
   align-items: stretch;
   background-color: #ffffff;
   text-align: left;
-  padding-top: 52px;
+  padding-top: 53px;
   padding-bottom: 40px;
   padding-left: 55px;
   padding-right: 55px;
@@ -391,7 +392,7 @@ a {
 .search-form-item {
   margin: 0;
   padding: 0;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   position: relative;
   display: flex;
   flex-basis: 100%;
@@ -402,7 +403,7 @@ a {
 .search-form-item input{
   padding: 0;
   width: 298px;
-  margin-left: 9px;
+  margin-left: auto;
   padding-right: 35px;
   padding-left: 8px;
 }
@@ -411,7 +412,7 @@ a {
   color: #000000;
 }
 
-::-moz-placeholder {
+input[type="text"]::-moz-placeholder {
   color: #000000;
 }
 
@@ -421,6 +422,15 @@ a {
 
 :-ms-input-placeholder {
   color: #000000;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .search-form input::-webkit-outer-spin-button,
@@ -574,7 +584,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-bottom: 42px;
   padding-left: 125px;
   padding-right: 101px;
@@ -603,12 +613,18 @@ a {
   color: #000000;
 }
 
+.footer-contacts span {
+  display: block;
+  margin-bottom: 5px;
+}
+
 .footer-social-list {
   text-align: center;
   align-self: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 5px;
   display: flex;
   width: 241px;
   flex-wrap: wrap;
@@ -997,7 +1013,7 @@ a {
   justify-content: space-between;
   padding-left: 72px;
   padding-right: 73px;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-bottom: 24px;
 }
 

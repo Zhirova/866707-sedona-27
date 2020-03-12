@@ -148,7 +148,8 @@ a {
   text-align: center;
 }
 
-.mask {
+.welcome-sedona::after {
+  content: "";
   position: absolute;
   background-repeat: no-repeat;
   bottom: 0;
@@ -191,7 +192,7 @@ a {
   color: #333333;
 }
 
-/* преимущества Седоны  */
+/* ПРЕИМУЩЕСТВА СЕДОНЫ */
 .reasons-list {
   padding: 0;
   margin: 0;
@@ -209,7 +210,7 @@ a {
   background-color: #81b3d2;
 }
 
-/* первая большая причина */
+/* ПЕРВАЯ БОЛЬШАЯ ПРИЧИНА */
 .description-column {
   margin: 0;
   line-height: 21px;
@@ -414,6 +415,7 @@ a {
 
 input[type="text"]::-moz-placeholder {
   color: #000000;
+  opacity: 1;
 }
 
 ::-ms-input-placeholder {
@@ -803,7 +805,7 @@ input::-webkit-inner-spin-button {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  vertical-align: center;
+  vertical-align: middle;
   cursor: pointer;
 }
 

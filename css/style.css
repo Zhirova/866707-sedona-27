@@ -276,13 +276,13 @@ a {
 }
 
 .big-reason-advantages-housing {
-  background-image: url(../img/bg/icon-reason1.svg);
+  background-image: url("../img/bg/icon-reason1.svg");
   background-repeat: no-repeat;
   background-position: top 60px center;
 }
 
 .big-reason-advantages-food {
-  background-image: url(../img/bg/icon-reason3.svg);
+  background-image: url("../img/bg/icon-reason3.svg");
   background-repeat: no-repeat;
   background-position: top 60px center;
 }
@@ -292,7 +292,7 @@ a {
 }
 
 .big-reason-advantages-souvenirs {
-  background-image: url(../img/bg/icon-reason2.svg);
+  background-image: url("../img/bg/icon-reason2.svg");
   background-repeat: no-repeat;
   background-position: top 55px center;
 }
@@ -426,7 +426,7 @@ input[type="text"]::-moz-placeholder {
   color: #000000;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance:textfield;
 }
 
@@ -561,7 +561,7 @@ input::-webkit-inner-spin-button {
   padding-left: 17px;
   padding-right: 17px;
   padding-top: 4px;
-   padding-bottom: 3px;
+  padding-bottom: 3px;
 }
 
 .blue-button-big {
@@ -688,7 +688,7 @@ input::-webkit-inner-spin-button {
 /* Для страницы sedona-hotels*/
 
 .filter-form {
-  background-image: url(../img/bg/filter-background.jpg);
+  background-image: url("../img/bg/filter-background.jpg");
   min-height: 165px;
   background-color: #4a789d;
   background-repeat: no-repeat;
@@ -745,11 +745,11 @@ input::-webkit-inner-spin-button {
   width: 27px;
   height: 23px;
   background-repeat: no-repeat;
-  background-image: url(../img/icons/checkbox-off.svg);
+  background-image: url("../img/icons/checkbox-off.svg");
 }
 
 .form-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
-  background-image: url(../img/icons/checkbox-on.svg);
+  background-image: url("../img/icons/checkbox-on.svg");
 }
 
 .form-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
@@ -757,11 +757,11 @@ input::-webkit-inner-spin-button {
 }
 
 .form-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
-  background-image: url(../img/icons/checkbox-off-disabled.svg);
+  background-image: url("../img/icons/checkbox-off-disabled.svg");
 }
 
 .form-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
-  background-image: url(../img/icons/checkbox-on-disabled.svg);
+  background-image: url("../img/icons/checkbox-on-disabled.svg");
 }
 
 .filter-item {
@@ -1070,17 +1070,26 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 
-.rating ul {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
+.stars {
+  margin: 0;
+  background-image: url("../img/icons/star.svg");
+  background-repeat: space;
+  min-height: 17px;
 }
 
-.rating li {
-  padding-left: 5px;
+.stars-4 {
+  width: 85px;
 }
 
-.rating p {
+.stars-3 {
+  width: 60px;
+}
+
+.stars-2 {
+  width: 40px;
+}
+
+.rating-nmb {
   margin: 0;
   background-color: #f2f2f2;
   color: #666666;
@@ -1088,8 +1097,4 @@ input::-webkit-inner-spin-button {
   padding-right: 13px;
   padding-bottom: 3px;
   padding-left: 16px;
-}
-
-.rating-nmb {
-  margin: 0;
 }

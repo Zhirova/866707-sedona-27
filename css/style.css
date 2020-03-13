@@ -1021,6 +1021,7 @@ input::-webkit-inner-spin-button {
 .found-hotel h3 {
   margin: 0;
   padding: 0;
+  line-height: 1.24;
 }
 
 .description-hotel {
@@ -1029,7 +1030,7 @@ input::-webkit-inner-spin-button {
   margin-left: 30px;
   margin-right: auto;
   margin-bottom: 7px;
-  min-width: 260px;
+  width: 650px;
 }
 
 .columns-container {
@@ -1075,6 +1076,7 @@ input::-webkit-inner-spin-button {
   background-image: url("../img/icons/star.svg");
   background-repeat: space;
   min-height: 17px;
+  margin-left: auto;
 }
 
 .stars-4 {

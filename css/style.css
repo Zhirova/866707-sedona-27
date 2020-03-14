@@ -367,6 +367,7 @@ a {
   margin: 0;
   padding: 0;
   position: absolute;
+  z-index: 1;
   top: 100%;
   left: 50%;
   margin-left: -284px;
@@ -580,6 +581,12 @@ input::-webkit-inner-spin-button {
 .blue-button:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.container iframe {
+  position: absolute;
+  border: none;
+  z-index: 0;
 }
 
 .main-footer {

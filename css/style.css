@@ -463,7 +463,7 @@ input[type="text"]::-moz-placeholder {
 }
 
 input[type="number"] {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 input::-webkit-outer-spin-button,
@@ -1119,8 +1119,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
   background-image: url("../img/icons/star.svg");
   background-repeat: space;
-  min-height: 17px;
+  height: 17px;
   margin-left: auto;
+}
+
+.stars-5 {
+  width: 100px;
 }
 
 .stars-4 {
@@ -1133,6 +1137,10 @@ input::-webkit-inner-spin-button {
 
 .stars-2 {
   width: 40px;
+}
+
+.stars-1 {
+  width: 20px;
 }
 
 .rating-nmb {

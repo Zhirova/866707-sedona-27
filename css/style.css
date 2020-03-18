@@ -753,7 +753,7 @@ input::-webkit-inner-spin-button {
   padding-left: 72px;
   padding-right: 74px;
   padding-top: 28px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
 .filter-form form {
@@ -822,7 +822,7 @@ input::-webkit-inner-spin-button {
 }
 
 .filter-item {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 /* СЛОЖНЫЙ ФИЛЬТР */
@@ -952,7 +952,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
   padding-left: 72px;
   padding-right: 65px;
-  padding-top: 31px;
+  padding-top: 32px;
   padding-bottom: 30px;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -1066,8 +1066,8 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   padding-left: 72px;
   padding-right: 73px;
-  padding-top: 18px;
-  padding-bottom: 24px;
+  padding-top: 19px;
+  padding-bottom: 23px;
 }
 
 .found-hotel figure {

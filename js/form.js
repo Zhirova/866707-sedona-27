@@ -23,10 +23,16 @@ if (form) {
   link.addEventListener("click", function (evt) {          //Переключение класса
     evt.preventDefault();
     form.classList.toggle("form-hide");
-    if (storageAdult || storageChild) {
-      child.value = storageChild;
-      adult.value = storageAdult;
-    }
+    if (!form.classList.contains("form-hide")) {
+      if (storageAdult) {
+        adult.value = storageAdult;
+      }
+      if (storageChild) {
+        child.value = storageChild;
+      }
+    } else {
+        form.classList.remove("form-error");
+      }
   });
 
   form.addEventListener("submit", function (evt) {         //отправка формы
@@ -37,8 +43,8 @@ if (form) {
       form.classList.add("form-error");
     } else {
         if (isStorageSupport) {
-        localStorage.setItem("adult", adult.value);            //взрослые и дети в  localStorage
-        localStorage.setItem("child", child.value);
+          localStorage.setItem("adult", adult.value);            //взрослые и дети в  localStorage
+          localStorage.setItem("child", child.value);
         }
       }
   });
